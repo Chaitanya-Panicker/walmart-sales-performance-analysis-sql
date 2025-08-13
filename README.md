@@ -1,50 +1,58 @@
-# 📊 Corporate Layoffs Data Analysis
+# 🛒 Walmart Sales & Performance Analysis 
 
 ## 📖 Project Overview  
-In recent years, the global job market has faced waves of layoffs — from tech giants to entertainment powerhouses. This project dives deep into **real-world layoff data** stored in MySQL, uncovering the trends, reasons, and patterns behind workforce reductions.  
-Our mission? **Transform raw data into actionable insights** so leaders, analysts, and job seekers can better understand the shifting employment landscape.  
+In the competitive retail landscape, **understanding customer purchases and store performance** is the key to growth.  
+This project transforms raw Walmart sales data — stored in **MySQL** — into **actionable insights** through powerful **Power BI dashboards**.  
+
+From analyzing **sales trends and payment methods** to identifying **top-performing branches and product categories**, this analysis tells the story of how Walmart can optimize sales, improve customer satisfaction, and maximize profit.  
 
 ---
 
 ## 🔍 Key Visualizations  
-- **Layoffs by Industry** — Spot the most affected sectors.  
-- **Global Heatmap** — Identify the countries facing the largest job cuts.  
-- **Reason-wise Breakdown** — From *Pandemic* to *Cost Cutting* to *Mergers*.  
-- **Hiring Freeze Trends** — See which companies have paused hiring alongside layoffs.  
-- **Percentage Impact** — How much of each company’s workforce was let go.  
+- **Total Invoices, Revenue, Quantity Sold, and Profit** at a glance.  
+- **Average Order Value by Branch** — Spot the most profitable locations.  
+- **Revenue by City** — Identifying top-performing markets.  
+- **Sales by Payment Method** — Understanding customer preferences.  
+- **Average Ratings & Profit by Category** — Combining financials with customer sentiment.  
+- **Monthly Revenue Trends** — Detecting seasonal sales patterns.  
+- **Invoice Count by Hour** — Pinpointing peak shopping times.  
 
 ---
 
 ## 💡 Insights & Analysis  
-- **Tech & IT Services** top the layoff charts, with some companies cutting over **10%** of their workforce.  
-- **Pandemic & Cost Cutting** remain the two biggest drivers, while **mergers** trigger targeted layoffs.  
-- Countries like **United States** and **India** dominate the layoff headlines.  
-- A surprising **link between hiring freezes and layoffs** — companies halting new hires often make deeper cuts.  
+- **Credit Card** is the most popular payment method, followed by **E-wallet**.  
+- **Weslaco & Waxahachie** cities lead in revenue contribution.  
+- **Fashion accessories** and **Home & lifestyle** dominate total profits, while **Electronic accessories** lag behind.  
+- **Customer ratings** are highest for *Food & Beverages* and *Health & Beauty*, suggesting stronger satisfaction in these categories.  
+- **December** shows a significant sales spike, indicating strong holiday season demand.  
+- Peak purchase times occur between **15:00 and 20:00**, revealing optimal hours for staffing and promotions.  
 
 ---
 
 ## 🛠 Technologies Used  
-- **MySQL** — Data storage and querying.  
-- **Python (Pandas, Matplotlib, Seaborn)** — Data analysis and visualization.  
-- **Jupyter Notebook** — Interactive storytelling with data.  
-- **MySQL Workbench** — Query execution and schema exploration.  
+- **MySQL** — Storing and querying Walmart sales data.  
+- **MySQL Workbench** — SQL execution and schema exploration.  
+- **Python (Pandas, Matplotlib, Seaborn)** — Data cleaning and preliminary analysis.  
+- **Power BI** — Dashboard creation and storytelling.  
 
 ---
 
 ## 📂 Project Steps  
-1. **Data Extraction** — Queried from MySQL using `SELECT * FROM layoffs;`.  
-2. **Data Cleaning** — Removed nulls, standardized date formats, normalized company names.  
-3. **Exploratory Data Analysis (EDA)** — Identified trends in layoffs, percentages, and reasons.  
-4. **Visualization** — Built charts for industry impact, country distribution, and temporal changes.  
-5. **Storytelling** — Summarized patterns into actionable insights.  
+1. **Data Import** — Load Walmart sales dataset into MySQL.  
+2. **Data Exploration** — Run queries (`SELECT * FROM walmart_sales;`) to inspect and validate.  
+3. **Data Cleaning** — Standardize dates, correct category names, and calculate new metrics.  
+4. **EDA in Python** — Identify trends before visualization.  
+5. **Power BI Dashboard Creation** — Build interactive visuals for executives and analysts.  
+6. **Insights Compilation** — Summarize findings into actionable recommendations.  
 
 ---
 
 ## 🚀 How to Use  
 1. Clone this repository.  
-2. Import the MySQL dataset into your own database (`layoffdb`).  
-3. Run the provided Jupyter Notebook (`Layoff Analysis.ipynb`).  
-4. Modify queries or plots to explore specific industries or countries.  
+2. Import the dataset into your MySQL database (`walmartdb`).  
+3. Run the queries in `sqlquery.sqlbook` to explore the dataset.  
+4. Open `Python.ipynb` for Python-based EDA.  
+5. Open the Power BI dashboard file to view interactive insights.  
 
 ---
 
