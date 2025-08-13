@@ -1,0 +1,101 @@
+-- SQLBook: Markup
+### Walmart Sales & Performance Analysis using SQL
+Analyzed Walmart retail transaction data to uncover key business insights, including revenue trends, customer purchasing patterns, and product performance. Demonstrate SQL expertise through aggregate queries, filtering, sorting, window functions, translating raw sales data into actionable metrics for decision-making.
+-- SQLBook: Markup
+#### Q1. Get unique product categories
+-- SQLBook: Code
+select distinct category from walmart_sales;
+-- SQLBook: Markup
+#### Q2. Count total number of invoices
+-- SQLBook: Code
+select count(distinct invoice_id) as total_invoices from walmart_sales;
+-- SQLBook: Markup
+#### Q3. Total quantity sold
+-- SQLBook: Code
+select sum(quantity) as total_quantity_sold from walmart_sales;
+-- SQLBook: Markup
+#### Q4. Total revenue generated
+-- SQLBook: Code
+select round(sum(total_price), 4) as total_revenue from walmart_sales;
+-- SQLBook: Markup
+#### Q5. Average order value per branch
+-- SQLBook: Code
+select branch, round(avg(total_price), 2) as avg_order_value
+from walmart_sales
+group by branch;
+-- SQLBook: Markup
+#### Q6. Most popular payment method
+-- SQLBook: Code
+select payment_method, count(*) as count
+from walmart_sales
+group by payment_method
+order by count desc
+limit 1;
+-- SQLBook: Markup
+#### Q7. Top 5 highest grossing cities
+-- SQLBook: Code
+select city, round(sum(total_price), 2) as revenue
+from walmart_sales
+group by city
+order by revenue desc
+limit 10;
+-- SQLBook: Markup
+#### Q8. Average product rating by category
+-- SQLBook: Code
+select category, round(avg(rating), 1)
+from walmart_sales
+group by category;
+-- SQLBook: Markup
+#### Q9. Daily sales trend
+-- SQLBook: Code
+select date, round(sum(total_price), 3) as daily_sales
+from walmart_sales
+group by date
+order by date;
+-- SQLBook: Markup
+#### Q10. Monthly revenue and quantity sold
+-- SQLBook: Code
+select month(str_to_date(date, '%d/%m/%y')) as month,
+round(sum(total_price), 0) as monthly_revenue,
+sum(quantity) as monthly_quantity
+from walmart_sales
+group by month
+order by month;
+-- SQLBook: Markup
+#### Q11. Top 3 profitable categories
+-- SQLBook: Code
+select category, round(sum(total_price*profit_margin), 2) as total_profit
+from walmart_sales
+group by category
+order by total_profit desc
+limit 3;
+-- SQLBook: Markup
+#### Q12. Peak sales hours (hourly trend)
+-- SQLBook: Code
+select hour(time(time)) as hour, count(*) as invoice_id
+from walmart_sales
+group by hour
+order by invoice_id desc
+limit 5;
+-- SQLBook: Markup
+#### Q13. Branch-wise average profit margin
+-- SQLBook: Code
+select branch, round(avg(profit_margin), 2)
+from walmart_sales
+group by branch
+order by branch;
+-- SQLBook: Markup
+#### Q14. Category with highest average unit price
+-- SQLBook: Code
+select category, round(avg(unit_price), 2) as avg_unit_price
+from walmart_sales
+group by category
+order by avg_unit_price asc
+limit 3;
+-- SQLBook: Markup
+#### Q15. Running Total of Sales Per Branch
+-- SQLBook: Code
+select Branch, date, total_price,
+sum(total_price) over 
+(partition by Branch order by str_to_date(date, "%d/%m/%y")) as running_sales
+from walmart_sales;
