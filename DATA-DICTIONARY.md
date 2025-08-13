@@ -2,6 +2,7 @@
 
 This file contains the data fields used along with their business definitions. It explains the meaning, purpose, and context of each field to have a clear understanding before analysis.
 
+
 **Avg Order Value** – The average value of customer orders in dollars for a branch or category.  
 
 ---
@@ -35,10 +36,6 @@ This file contains the data fields used along with their business definitions. I
 ---
 
 **Date** – The transaction date.  
-
----
-
-**Hour** – The hour of the day the transaction occurred, used for hourly sales analysis.  
 
 ---
 
@@ -79,10 +76,6 @@ This file contains the data fields used along with their business definitions. I
 ---
 
 **Running Sales** – Cumulative sales amount calculated up to a given date.  
-
----
-
-**Time** – The exact time of the sales transaction.  
 
 ---
 
