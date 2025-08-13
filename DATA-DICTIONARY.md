@@ -99,4 +99,17 @@ Total earnings after deducting costs from revenue.
 ---
 
 **Total Quantity Sold**  
-The sum of
+The sum of all units sold across transactions.  
+---
+
+**Total Revenue**  
+The total sales income before subtracting costs.  
+---
+
+**Total Price (sum)**  
+Aggregated sum of all sales prices in the dataset.  
+---
+
+**Unit Price**  
+Price charged for a single item in a transaction.  
+---
