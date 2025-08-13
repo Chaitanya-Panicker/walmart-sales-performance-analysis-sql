@@ -8,17 +8,17 @@ This file contains the data fields used along with their business definitions. I
 ---
 
 **Avg Profit Margin**
-  The average percentage of profit earned per sale after costs are deducted.  
+  - The average percentage of profit earned per sale after costs are deducted.  
 
 ---
 
 **Avg Rating** 
-  The average customer satisfaction score based on post-purchase ratings.  
+  - The average customer satisfaction score based on post-purchase ratings.  
 
 ---
 
 **Avg Unit Price** 
-  The average selling price of a single unit across products.  
+  - The average selling price of a single unit across products.  
 
 ---
 
