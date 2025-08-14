@@ -39,11 +39,12 @@ From analyzing **sales trends and payment methods** to identifying **top-perform
 ---
 
 ## 📂 Project Steps  
-1. **Data Import** — Load Walmart sales dataset into MySQL.  
-2. **Data Exploration** — Run queries (`SELECT * FROM walmart_sales;`) to inspect and validate.  
-3. **Data Cleaning** — Standardize dates, correct category names, and calculate new metrics.  
-4. **EDA in Python** — Identify trends before visualization.  
-5. **Power BI Dashboard Creation** — Build interactive visuals for executives and analysts.   
+1. Use **Kaggle API** to download the dataset into jupyter notebook using CLI
+2. **Data Import** — Load Walmart sales dataset into MySQL.  
+3. **Data Exploration** — Run queries (`SELECT * FROM walmart_sales;`) to inspect and validate.  
+4. **Data Cleaning** — Standardize dates, correct category names, and calculate new metrics.  
+5. **EDA in Python** — Identify trends before visualization.  
+6. **Power BI Dashboard Creation** — Build interactive visuals for executives and analysts.   
 
 ---
 
