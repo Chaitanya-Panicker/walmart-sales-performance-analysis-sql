@@ -39,7 +39,7 @@ From analyzing **sales trends and payment methods** to identifying **top-perform
 ---
 
 ## 📂 Project Steps  
-1. Use **Kaggle API** to download the dataset into jupyter notebook using CLI
+1. Use **Kaggle API** to download the dataset into jupyter notebook using CLI.
 2. **Data Import** — Load Walmart sales dataset into MySQL.  
 3. **Data Exploration** — Run queries (`SELECT * FROM walmart_sales;`) to inspect and validate.  
 4. **Data Cleaning** — Standardize dates, correct category names, and calculate new metrics.  
