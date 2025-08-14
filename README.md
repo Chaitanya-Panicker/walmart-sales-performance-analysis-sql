@@ -3,8 +3,7 @@
 <img width="1271" height="771" alt="Screenshot 1" src="https://github.com/user-attachments/assets/eaaf21df-0c09-47c2-8462-cbe0f7e86e32" />
 
 ## 📖 Project Overview  
-In the competitive retail landscape, **understanding customer purchases and store performance** is the key to growth.  
-This project transforms raw Walmart sales data — stored in **MySQL** — into **actionable insights** through powerful **Power BI dashboards**.  
+In the competitive retail landscape, **understanding customer purchases and store performance** is the key to growth. This project transforms raw Walmart sales data — stored in **MySQL** — into **actionable insights** through powerful **Power BI dashboards**.  
 
 From analyzing **sales trends and payment methods** to identifying **top-performing branches and product categories**, this analysis tells the story of how Walmart can optimize sales, improve customer satisfaction, and maximize profit.  
 
