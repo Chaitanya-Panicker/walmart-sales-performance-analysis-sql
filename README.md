@@ -1,5 +1,7 @@
 # 🛒 Walmart Sales & Performance Analysis 
 
+<img width="1271" height="771" alt="Screenshot 1" src="https://github.com/user-attachments/assets/eaaf21df-0c09-47c2-8462-cbe0f7e86e32" />
+
 ## 📖 Project Overview  
 In the competitive retail landscape, **understanding customer purchases and store performance** is the key to growth.  
 This project transforms raw Walmart sales data — stored in **MySQL** — into **actionable insights** through powerful **Power BI dashboards**.  
@@ -42,8 +44,7 @@ From analyzing **sales trends and payment methods** to identifying **top-perform
 2. **Data Exploration** — Run queries (`SELECT * FROM walmart_sales;`) to inspect and validate.  
 3. **Data Cleaning** — Standardize dates, correct category names, and calculate new metrics.  
 4. **EDA in Python** — Identify trends before visualization.  
-5. **Power BI Dashboard Creation** — Build interactive visuals for executives and analysts.  
-6. **Insights Compilation** — Summarize findings into actionable recommendations.  
+5. **Power BI Dashboard Creation** — Build interactive visuals for executives and analysts.   
 
 ---
 
@@ -57,9 +58,9 @@ From analyzing **sales trends and payment methods** to identifying **top-perform
 ---
 
 ## 📬 Contact  
-👤 **Your Name**  
-📧 your.email@example.com  
-🌐 [Your Portfolio Link]  
+👤 **Chaitanya Panicker**  
+📧 chaitanya.panicker98@gmail.com  
+🌐 https://www.linkedin.com/in/chaitanyapanicker  
 
 ---
 
